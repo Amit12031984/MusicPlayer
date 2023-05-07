@@ -1,0 +1,88 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: maroon;
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    
+}
+.imganimation
+{
+    animation: imgMove 5s infinite;
+}
+.container
+{
+    width: 400px;
+    height: 480px;
+    text-align: center;
+    border: 1px solid black;
+    margin-top : 100px;
+    box-shadow: 2px 2px 20px white;
+    border-radius: 15px;
+}
+.singer
+{
+    font-style: italic;
+}
+.controls
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+#backward, #play, #forward
+{
+    font-size: 30px;
+}
+#play
+{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: black;
+}
+#play:hover
+{
+    color: black;
+    background-color: white;
+}
+.progressbarcontainer
+{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+.progressbar
+{
+    width: 0%;
+    height: 4px;
+    background-color: orange;
+}
+.time
+{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+@keyframes imgMove
+{
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(90deg); }
+    50% { transform: rotate(180deg); }
+    75% { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
